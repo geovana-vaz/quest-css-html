@@ -1,0 +1,139 @@
+html{
+    background: url('../images/bg-desktop.svg') no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    max-width: 1440px;
+}
+
+.logo img{
+    margin: 30px;
+    padding: 20px;
+    width: 250px;
+}
+
+.container .images img{
+    margin: 50px;
+    width: 650px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: auto;
+}
+
+.info .title{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.info .text{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.info .btn-register a{
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    font-size: 15px;
+    padding: 12px 50px;
+    border-radius: 40px;
+    transition: 0.3s;
+    box-shadow: 40px;
+    box-shadow: 3px 3px 20px rgb(47, 46, 46);
+}
+
+.info .btn-register a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+.social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s ease;
+  }
+  
+.social-icon:hover {
+    color: hsl(300, 69%, 71%);
+  }
+
+@media (max-width: 768px){
+    html{
+        background: url('../images/bg-mobile.svg') no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .images img{
+        width: 600px;
+    }
+
+    .info{
+        margin-top: 30px;
+        margin-bottom: auto;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px){
+    html{
+        background: url('../images/bg-mobile.svg') no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 200px;
+    }
+
+    .container .images img{
+        width: 350px;
+        margin: 10px;
+    }
+
+    .info .title{
+        font-size: 14px;
+    }
+
+    .info .text{
+        margin: 15px;
+    }
+
+    .social-icons{
+        justify-content: center;
+    }
+}
+
